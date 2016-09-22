@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Movie Quotes Viewer</string>
+    <string-array name="Titles">
+        <item>Star Wars</item>
+        <item>The Godfather</item>
+        <item>Caddyshack</item>
+        <item>Wizard of Oz</item>
+    </string-array>
+    <string-array name="Quotes">
+        <item>May the Force be with you.</item>
+        <item>I\'m going to make him an offer he can\'t refuse.</item>
+        <item>Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a mirac…It\'s in the hole! It\'s in the hole! It\'s in the hole!</item>
+        <item>I\'ll get you my little pretty, and your little dog too</item>
+    </string-array>
+</resources>
