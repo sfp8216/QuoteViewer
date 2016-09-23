@@ -9,18 +9,18 @@
     <fragment
         android:id="@+id/details"
         android:layout_width="match_parent"
-        android:layout_height="179dp"
+        android:layout_height="0dp"
         class="course.examples.fragments.staticlayout.QuotesFragment"
-        android:layout_weight="0.50" />
+        android:layout_weight="1.5" />
 
     <fragment
         android:id="@+id/titles"
         android:layout_width="match_parent"
-        android:layout_height="177dp"
+        android:layout_height="0dp"
         class="course.examples.fragments.staticlayout.TitlesFragment"
         tools:layout="@layout/title_item"
-        android:layout_weight="0.50"
         android:padding="10dp"
-        android:layout_gravity="bottom" />
+        android:layout_gravity="bottom"
+        android:layout_weight="0.75"/>
 
 </LinearLayout>
