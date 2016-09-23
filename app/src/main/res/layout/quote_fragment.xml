@@ -4,12 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/star_wars" />
+
     <TextView
         android:id="@+id/quoteView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:padding="5dip"
-        android:textSize="32sp">
+        android:textSize="15sp">
     </TextView>
 
 </LinearLayout>

@@ -5,6 +5,7 @@
     android:background="?android:attr/activatedBackgroundIndicator"
     android:orientation="vertical"
     android:padding="5dip"
-    android:textSize="32sp" >
+    android:textSize="15sp"
+    android:layout_gravity="bottom">
 
 </TextView>

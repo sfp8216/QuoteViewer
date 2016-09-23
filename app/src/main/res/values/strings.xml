@@ -13,4 +13,10 @@
         <item>Cinderella story. Outta nowhere. A former greenskeeper, now, about to become the Masters champion. It looks like a mirac…It\'s in the hole! It\'s in the hole! It\'s in the hole!</item>
         <item>I\'ll get you my little pretty, and your little dog too</item>
     </string-array>
+    <string-array name="Pictures">
+        <item>X:\Workspace\Repositories\QuoteViewer\app\src\main\res\mipmap-hdpi\godfather.png</item>
+        <item>../mipmap/godfather.png</item>
+        <item>../mipmap/caddyshack.png</item>
+        <item>../mipmap/wizard_of_oz.png</item>
+    </string-array>
 </resources>

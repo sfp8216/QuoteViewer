@@ -2,11 +2,15 @@ package course.examples.fragments.staticlayout;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 //Several Activity and Fragment lifecycle methods are instrumented to emit LogCat output
@@ -14,8 +18,10 @@ import android.widget.TextView;
 public class QuotesFragment extends Fragment {
 
 	private TextView quoteView = null;
+	private ImageView pictureView = null;
 	private int currIdx = -1;
 	private int quoteArrayLen;
+	private int imageArrayLen;
 
 	private static final String TAG = "QuotesFragment";
 
@@ -29,6 +35,10 @@ public class QuotesFragment extends Fragment {
 			return;
 		currIdx = newIndex;
 		quoteView.setText(QuoteViewerActivity.quoteArray[currIdx]);
+		Bitmap bm = BitmapFactory.decodeFile(QuoteViewerActivity.picturesArray[currIdx]);
+		pictureView.setImageBitmap(bm);
+
+
 	}
 
 	@Override
@@ -59,7 +69,9 @@ public class QuotesFragment extends Fragment {
 		super.onActivityCreated(savedInstanceState);
 
 		quoteView = (TextView) getActivity().findViewById(R.id.quoteView);
+		pictureView = (ImageView) getActivity().findViewById(R.id.imageView);
 		quoteArrayLen = QuoteViewerActivity.quoteArray.length;
+		imageArrayLen = quoteArrayLen;
 	}
 
 	@Override
