@@ -1,6 +1,7 @@
 package course.examples.fragments.staticlayout;
 
 import android.app.Activity;
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.util.Log;
 import course.examples.fragments.staticlayout.TitlesFragment.ListSelectionListener;
@@ -12,7 +13,7 @@ public class QuoteViewerActivity extends Activity implements
 
 	public static String[] titleArray;
 	public static String[] quoteArray;
-	public static String[] picturesArray;
+	public static TypedArray picturesArray;
 	private QuotesFragment detailsFragment;
 
 	private static final String TAG = "QuoteViewerActivity";
@@ -24,8 +25,7 @@ public class QuoteViewerActivity extends Activity implements
 		// Get the string arrays with the titles and qutoes
 		titleArray = getResources().getStringArray(R.array.Titles);
 		quoteArray = getResources().getStringArray(R.array.Quotes);
-		picturesArray = getResources().getStringArray(R.array.Pictures);
-
+		picturesArray = getResources().obtainTypedArray(R.array.Pictures);
 		setContentView(R.layout.main);
 
 		// Get a reference to the QuotesFragment

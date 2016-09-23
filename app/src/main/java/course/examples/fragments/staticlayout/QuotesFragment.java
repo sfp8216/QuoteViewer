@@ -22,6 +22,7 @@ public class QuotesFragment extends Fragment {
 	private int currIdx = -1;
 	private int quoteArrayLen;
 	private int imageArrayLen;
+	private int pictureResource;
 
 	private static final String TAG = "QuotesFragment";
 
@@ -35,10 +36,8 @@ public class QuotesFragment extends Fragment {
 			return;
 		currIdx = newIndex;
 		quoteView.setText(QuoteViewerActivity.quoteArray[currIdx]);
-		Bitmap bm = BitmapFactory.decodeFile(QuoteViewerActivity.picturesArray[currIdx]);
-		pictureView.setImageBitmap(bm);
-
-
+		pictureView.setImageResource(QuoteViewerActivity.picturesArray.getResourceId(currIdx,-1));
+			Log.i(TAG," is in the array");
 	}
 
 	@Override
