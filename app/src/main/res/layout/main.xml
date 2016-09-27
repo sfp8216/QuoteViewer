@@ -10,14 +10,14 @@
         android:id="@+id/details"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        class="course.examples.fragments.staticlayout.QuotesFragment"
+        class="com.sfp.rit.QuotesViewer.QuotesFragment"
         android:layout_weight="1.5" />
 
     <fragment
         android:id="@+id/titles"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        class="course.examples.fragments.staticlayout.TitlesFragment"
+        class="com.sfp.rit.QuotesViewer.TitlesFragment"
         tools:layout="@layout/title_item"
         android:padding="10dp"
         android:layout_gravity="bottom"

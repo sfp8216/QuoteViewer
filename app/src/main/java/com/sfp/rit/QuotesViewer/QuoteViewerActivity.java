@@ -1,10 +1,10 @@
-package course.examples.fragments.staticlayout;
+package com.sfp.rit.QuotesViewer;
 
 import android.app.Activity;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.util.Log;
-import course.examples.fragments.staticlayout.TitlesFragment.ListSelectionListener;
+import com.sfp.rit.QuotesViewer.TitlesFragment.ListSelectionListener;
 
 //Several Activity lifecycle methods are instrumented to emit LogCat output
 //so you can follow this class' lifecycle

@@ -1,4 +1,4 @@
-package course.examples.fragments.staticlayout;
+package com.sfp.rit.QuotesViewer;
 
 import android.app.Activity;
 import android.app.ListFragment;

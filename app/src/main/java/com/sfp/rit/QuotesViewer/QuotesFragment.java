@@ -1,10 +1,7 @@
-package course.examples.fragments.staticlayout;
+package com.sfp.rit.QuotesViewer;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
